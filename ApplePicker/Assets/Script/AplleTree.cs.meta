@@ -3,7 +3,8 @@ guid: 24c6af3c34ad64fc081a4397c1e706fa
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - applePrefab: {fileID: 1865978768473325016, guid: 5e2ec376db37440ec9ab340357ba6ae8, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
