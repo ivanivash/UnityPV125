@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using Script;
 using UnityEngine;
 
 public class Apple : MonoBehaviour
 {
-    public static float bottowY = -20f;
+    [Header("Set in Inspector")]
+    public static float bottomY = -20f;
     // Start is called before the first frame update
     void Start()
     {
@@ -12,12 +14,12 @@ public class Apple : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if (transform.position.y < bottowY)
+    void Update() {
+        if (transform.position.y < bottomY)
         {
-            Destroy(gameObject);
-        }   
-        
+            Destroy(this.gameObject);
+            ApplePicker apScript = Camera.main.GetComponent<ApplePicker>();
+            apScript.AppleDestroyed();
+        }
     }
 }
