@@ -38,7 +38,7 @@ namespace Script
             Destroy(tBasketGo);
             
             if (basketList.Count == 0) {
-                SceneManager.LoadScene("SampleScene");
+                SceneManager.LoadScene("GameOver");
             }
         }
 
