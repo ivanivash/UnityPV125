@@ -30,10 +30,11 @@ namespace Script
             GameObject apple = Instantiate<GameObject>(applePrefab);
             apple.transform.position = transform.position;
             Invoke("DropApple", secondsBetweenAppleDrops);
-            print("text");
+            
         }
-        void Update() {
+
             //просте направлення яблуні
+        void Update() {
             Vector3 pos = transform.position;
             pos.x += speed * Time.deltaTime;
             transform.position = pos;

@@ -26,11 +26,11 @@ namespace Script
         }
 
         public void AppleDestroyed() {
-            print("text2");
             GameObject[] tAppleArray = GameObject.FindGameObjectsWithTag("Apple");
             foreach (GameObject tGo in tAppleArray) {
                 Destroy(tGo);
             }
+
             //Індекс елемента кошика, який хочемо видалить
             int basketIndex = basketList.Count - 1;
             GameObject tBasketGo = basketList[basketIndex];
