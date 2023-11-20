@@ -31,7 +31,7 @@ namespace Script
                 Destroy(tGo);
             }
 
-            //Індекс елемента кошика, який хочемо видалить
+            //Індекс елемента кошика, який хочемо видалити
             int basketIndex = basketList.Count - 1;
             GameObject tBasketGo = basketList[basketIndex];
             basketList.RemoveAt(basketIndex);

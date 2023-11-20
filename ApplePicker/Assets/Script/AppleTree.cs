@@ -19,8 +19,8 @@ namespace Script
         
         // 1 раз у секунду буде падать яблука
         public float secondsBetweenAppleDrops = 1f;
-        
-        // Start is called before the first frame update
+
+        // Старт викликається перед першим оновленням кадру
         void Start() {
             // скидає яблука  раз в секунду
             Invoke("DropApple", 2f);
