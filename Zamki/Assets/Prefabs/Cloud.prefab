@@ -47,8 +47,8 @@ MonoBehaviour:
   cloudSphere: {fileID: 4623181739061192515, guid: d8ea1e34d579e45b0ac679019003f2ab, type: 3}
   numSpheresMin: 6
   numSpheresMax: 10
-  sphereOffsetScale: {x: 5, y: 2, z: 1}
-  sphereScaleRangeX: {x: 4, y: 8}
-  sphereScaleRangeY: {x: 3, y: 4}
-  sphereScaleRangeZ: {x: 2, y: 4}
-  scaleYMin: 2
+  sphereOffsetScale: {x: 10, y: 6, z: 1}
+  sphereScaleRangeX: {x: 5, y: 8}
+  sphereScaleRangeY: {x: 3, y: 3}
+  sphereScaleRangeZ: {x: 4, y: 6}
+  scaleYMin: 3
