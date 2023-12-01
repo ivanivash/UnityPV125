@@ -17,7 +17,8 @@ public class ProjectileLine : MonoBehaviour
         line.enabled = false;
         points = new List<Vector3>();
     }
-     public GameObject poi{
+
+    public GameObject poi{
         get{
             return (_poi);
         }

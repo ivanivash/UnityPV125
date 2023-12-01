@@ -17,14 +17,13 @@ public class Cloud : MonoBehaviour
     public float scaleYMin = 2f;
 
     private List<GameObject> spheres;
+
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
         spheres = new List<GameObject>();
 
         int num = Random.Range(numSpheresMin, numSpheresMax);
-        for (int i = 0; i < num; i++)
-        {
+        for (int i = 0; i < num; i++) {
             GameObject sp = Instantiate(cloudSphere);
             spheres.Add(sp);
             Transform spTrans = sp.transform;
@@ -52,17 +51,14 @@ public class Cloud : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
+    void Update() {
+        if (Input.GetKeyDown(KeyCode.Space)) {
             Restart();
         }
     }
-    void Restart()
-    {
-        foreach (GameObject sp in spheres)
-        {
+
+    void Restart() {
+        foreach (GameObject sp in spheres) {
             Destroy(sp);
         }
         Start();

@@ -13,12 +13,11 @@ public class FollowCam : MonoBehaviour
     [Header("Set Dynamically")]
     public float camZ;
 
-    private void Awake()
-    {
+    private void Awake() {
         camZ = this.transform.position.z;
     }
-    private void FixedUpdate()
-    {
+
+    private void FixedUpdate() {
         // if (POI == null) return;
         // Vector3 destination = POI.transform.position;
 
@@ -31,10 +30,13 @@ public class FollowCam : MonoBehaviour
         else{
             // отримати позицію обєкта
             destination = POI.transform.position;
+
             // якщо обʼєк снаряд, то переконуємося, що він зупинився
             if (POI.tag == "Projectile"){
+
                 // якщо стоїть на місці (не рухається)
                 if (POI.GetComponent<Rigidbody>().IsSleeping()) {
+
                     // повернути камеру на початок
                     POI = null;
                     return;
